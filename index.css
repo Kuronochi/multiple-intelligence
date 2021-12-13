@@ -1,0 +1,149 @@
+div.strony {
+    display: none;
+}
+div.strona2 {
+    display: none;
+}
+div.strona3 {
+    display: none;
+}
+div.strona4 {
+    display: none;
+}
+
+.langEN {
+    display: none;
+}
+
+div.prog {
+    width: 650px;
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:rgb(255, 255, 255);
+  }
+div.wynik{
+    display: none;
+}
+
+
+div.langch {
+    width: auto;
+   
+    float: left;
+    padding: 20px;
+    border: 2px solid red;
+
+}
+
+div.tytul{
+    width: 40%;
+    float: left;
+    padding: 10px;
+    border: 2px solid red;
+
+}
+
+.float-container {
+    border: 1px solid rgb(230, 247, 2);
+    padding: 20px;
+    height: 100px;
+}
+div.strony{
+    
+    border: 2px solid rgb(49, 67, 170);
+    padding: 20px;
+}
+
+
+input[type="checkbox"] {
+    content: url('england.jpg');
+    display: block;
+    width: 60px;
+}
+input[type="checkbox"]:checked {
+    content: url('polska.png');
+}
+.native-hidden {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.ehh{
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+ button {     
+        margin-top: 30px;
+        margin-left: 2%;
+        padding: 5px;
+        background: none;
+        border: 2px solid rgb(54, 52, 52);
+        border-radius: 10px;
+        color: rgb(54, 52, 52);
+        font-size: 25px;
+        text-transform: uppercase;
+        cursor: pointer;    
+    }
+
+.m-button {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.wrapper {
+  text-align: center;
+  display: inline-block;
+  top: 50%;
+  left: 50%;
+  
+  }
+  body{
+    background: linear-gradient(to right,  rgb(197, 197, 197) 10%, rgb(236, 236, 236) 50%, rgb(192, 192, 192) 90%);
+    height: auto;
+    font-size: 20px;
+  }
+/* input{ 
+    color:black;
+    background-color: white;
+    outline: 1px solid black;   
+    width: 16px;
+    height: 16px;
+    inline-size: 50px;
+    max-inline-size: 5px;
+    
+}
+*/
+/*
+input:checked {
+    border: 10px solid rgb(0, 0, 0);
+
+  }
+
+  input:hover{
+    border: 50px solid rgb(255, 0, 157);
+  }
+  
+  input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    inline-size: 40px ;
+    outline: 4px solid rgb(11, 217, 245);
+    border-radius: 45%;
+    width: 16px;
+    height: 16px;
+    box-shadow: 16px 0 7px rgba(255, 251, 5, 0.596);
+    border: 3px solid rgb(0, 255, 34);
+    transition: 0.2s all linear;
+    margin-right: 5px;
+  
+    position: relative;
+    top: 4px;
+  }
+*/
