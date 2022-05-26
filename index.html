@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test v.Pre Alpha 0.05</title>
+    <title>Test na inteligencję wieloraką</title>
     <link rel="stylesheet" href="index.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
     <style>        
     </style>
 </head>
@@ -16,14 +16,17 @@
         <div class='start'>
         <div class="float-container">
             <div class='tytul'>
-<h3 class='langPL'>Test inteligencji</h3>
-<h3 class='langEN'>English text :)</h3>
+<h3 class='langPL'>Test inteligencji Wielorakiej</h3>
+<h3 class='langEN'>Multiple Inteligence Test</h3>
 </div>
-<div class="langch">
 
- <a onclick="eng();"><input class="native-hidden" type="checkbox" /></a>
-
+<div class="langch">    
+    <a onclick="eng();"><input class="native-hidden" type="checkbox" /></a>
 </div>
+<div class="langch"> 
+    <a id="pytanie 1" class='langPL'>Change Language</a>
+        <a class='langEN'>Zmień Język</a>
+    </div>
 
 </div>
 <p><button class="m-button" onclick="startTs()">start</button></p>
@@ -101,7 +104,7 @@
     <input class="choice" type="radio" name="pyt7" value="3">3</input>
     <input class="choice" type="radio" name="pyt7" value="4">4</input>
     <input class="choice" type="radio" name="pyt7" value="5">5</input>
-    <input type="text" id="PT7" value="" style="width: 15px" maxlength="1" onkeypress="return onlyNumberKey(event)">
+
     <p id="pytanie 8" class='langPL'>Dobrze żyję z ludźmi o odmiennych charakterach i zainteresowaniach.</p>
     <p class='langEN'>I live well with people of different characters and interests.</p>
     <input class="choice" type="radio" name="pyt8" value="0">0</input> 
@@ -110,7 +113,7 @@
     <input class="choice" type="radio" name="pyt8" value="3">3</input>
     <input class="choice" type="radio" name="pyt8" value="4">4</input>
     <input class="choice" type="radio" name="pyt8" value="5">5</input>
-    <input type="text" id="PT8" value="" style="width: 15px" maxlength="1" onkeypress="return onlyNumberKey(event)">
+   
     <p id="pytanie 9" class='langPL'>Często myślę o swoich celach i marzeniach związanych z przyszłością.</p>
     <p class='langEN'>I often think about my goals and dreams related to the future.</p>
     <input class="choice" type="radio" name="pyt9" value="0">0</input> 
@@ -119,7 +122,7 @@
     <input class="choice" type="radio" name="pyt9" value="3">3</input>
     <input class="choice" type="radio" name="pyt9" value="4">4</input>
     <input class="choice" type="radio" name="pyt9" value="5">5</input>
-    <input type="text" id="PT9" value="" style="width: 15px" maxlength="1" onkeypress="return onlyNumberKey(event)">
+    
     <p id="pytanie 10" class='langPL'>Lubię się uczyć o Ziemi i o przyrodzie.</p>
     <p class='langEN'>I like learning about the Earth and nature.</p>
     <input class="choice" type="radio" name="pyt10" value="0">0</input> 
@@ -128,7 +131,7 @@
     <input class="choice" type="radio" name="pyt10" value="3">3</input>
     <input class="choice" type="radio" name="pyt10" value="4">4</input>
     <input class="choice" type="radio" name="pyt10" value="5">5</input>
-    <input type="text" id="PT10" value="" style="width: 15px" maxlength="1" onkeypress="return onlyNumberKey(event)">
+    
     <p id="pytanie 11" class='langPL'>Opieka nad domowymi i innymi zwierzętami sprawia mi przyjemność.</p>
     <p class='langEN'>I enjoy looking after domestic and other animals.</p>
     <input class="choice" type="radio" name="pyt11" value="0">0</input> 
@@ -137,7 +140,7 @@
     <input class="choice" type="radio" name="pyt11" value="3">3</input>
     <input class="choice" type="radio" name="pyt11" value="4">4</input>
     <input class="choice" type="radio" name="pyt11" value="5">5</input>
-    <input type="text" id="PT11" value="" style="width: 15px" maxlength="1" onkeypress="return onlyNumberKey(event)">
+
     <p id="pytanie 12" class='langPL'>Lubię zadania związane z ruchem fizycznym i odgrywaniem scenek.</p>
     <p class='langEN'>I like tasks related to physical movement and role-playing.</p>
     <input class="choice" type="radio" name="pyt12" value="0">0</input> 
@@ -146,7 +149,7 @@
     <input class="choice" type="radio" name="pyt12" value="3">3</input>
     <input class="choice" type="radio" name="pyt12" value="4">4</input>
     <input class="choice" type="radio" name="pyt12" value="5">5</input>
-    <input type="text" id="PT12" value="" style="width: 15px" maxlength="1" onkeypress="return onlyNumberKey(event)">
+
     </div>
     <div>
     <div class="strona2 wrapper">
@@ -169,7 +172,7 @@
     <input class="choice" type="radio" name="pyt13" value="3">3</input>
     <input class="choice" type="radio" name="pyt13" value="4">4</input>
     <input class="choice" type="radio" name="pyt13" value="5">5</input>
-    <input type="text" id="PT13" value="" style="width: 15px" maxlength="1" onkeypress="return onlyNumberKey(event)">
+
     <p id="pytanie 1" class='langPL'>Łatwo przychodzi mi nauka nowego materiału z matematyki.</p>
     <p class='langEN'>It’s easy for me to learn new math material.</p>
     <input class="choice" type="radio" name="pyt14" value="0">0</input> 
@@ -178,7 +181,7 @@
     <input class="choice" type="radio" name="pyt14" value="3">3</input>
     <input class="choice" type="radio" name="pyt14" value="4">4</input>
     <input class="choice" type="radio" name="pyt14" value="5">5</input>
-    <input type="text" id="PT14" value="" style="width: 15px" maxlength="1" onkeypress="return onlyNumberKey(event)">
+ 
     <p id="pytanie 1" class='langPL'>Gram lub chciałbym grać na jakimś instrumencie muzycznym.</p>
     <p class='langEN'>I play or would like to play a musical instrument.</p>
     <input class="choice" type="radio" name="pyt15" value="0">0</input> 
@@ -187,7 +190,7 @@
     <input class="choice" type="radio" name="pyt15" value="3">3</input>
     <input class="choice" type="radio" name="pyt15" value="4">4</input>
     <input class="choice" type="radio" name="pyt15" value="5">5</input>
-    <input type="text" id="PT15" value="" style="width: 15px" maxlength="1" onkeypress="return onlyNumberKey(event)">
+
     <p id="pytanie 1" class='langPL'>Jestem dobry w zajęciach fizycznych takich jak sport lub taniec.</p>
     <p class='langEN'>I am good at physical activities such as sports or dancing.</p>
     <input class="choice" type="radio" name="pyt16" value="0">0</input> 
@@ -196,7 +199,7 @@
     <input class="choice" type="radio" name="pyt16" value="3">3</input>
     <input class="choice" type="radio" name="pyt16" value="4">4</input>
     <input class="choice" type="radio" name="pyt16" value="5">5</input>
-    <input type="text" id="PT16" value="" style="width: 15px" maxlength="1" onkeypress="return onlyNumberKey(event)">
+
     <p id="pytanie 1" class='langPL'>Lubię gry liczbowe i łamigłówki logiczne.</p>
     <p class='langEN'>I like number games and logic puzzles.</p>
     <input class="choice" type="radio" name="pyt17" value="0">0</input> 
@@ -205,7 +208,7 @@
     <input class="choice" type="radio" name="pyt17" value="3">3</input>
     <input class="choice" type="radio" name="pyt17" value="4">4</input>
     <input class="choice" type="radio" name="pyt17" value="5">5</input>
-    <input type="text" id="PT17" value="" style="width: 15px" maxlength="1" onkeypress="return onlyNumberKey(event)">
+    
     <p id="pytanie 1" class='langPL'>Najlepiej uczę się, gdy mogę wykonać ćwiczenia praktyczne.</p>
     <p class='langEN'>I learn best when I can do practical exercises.</p>
     <input class="choice" type="radio" name="pyt18" value="0">0</input> 
@@ -214,15 +217,11 @@
     <input class="choice" type="radio" name="pyt18" value="3">3</input>
     <input class="choice" type="radio" name="pyt18" value="4">4</input>
     <input class="choice" type="radio" name="pyt18" value="5">5</input>
-    <input type="text" id="PT18" value="" style="width: 15px" maxlength="1" onkeypress="return onlyNumberKey(event)">
+
     </div>
     <div class="strona3 wrapper">
-    
-        <button onclick="strona3t2()">strona 2</button>
-       
-    
+            <button onclick="strona3t2()">strona 2</button>
             <button onclick="strona3t4()">strona 4</button>
-        
         </div>
     <!-- strona 4-->
     <div class='strona4'>
@@ -234,7 +233,7 @@
     <input class="choice" type="radio" name="pyt19" value="3">3</input>
     <input class="choice" type="radio" name="pyt19" value="4">4</input>
     <input class="choice" type="radio" name="pyt19" value="5">5</input>
-    <input type="text" id="PT19" value="" style="width: 15px" maxlength="1" onkeypress="return onlyNumberKey(event)">
+
     <p id="pytanie 1" class='langPL'>Często pomagam innym z własnej inicjatywy.</p>
     <p class='langEN'>I often help others on my own initiative.</p>
     <input class="choice" type="radio" name="pyt20" value="0">0</input> 
@@ -243,7 +242,7 @@
     <input class="choice" type="radio" name="pyt20" value="3">3</input>
     <input class="choice" type="radio" name="pyt20" value="4">4</input>
     <input class="choice" type="radio" name="pyt20" value="5">5</input>
-    <input type="text" id="PT20" value="" style="width: 15px" maxlength="1" onkeypress="return onlyNumberKey(event)">
+
     <p id="pytanie 1" class='langPL'>Bez względu na pogodę, lubię przebywać na świeżym powietrzu, na dworze.</p>
     <p class='langEN'>Regardless of the weather, I like to be outdoor.</p>
     <input class="choice" type="radio" name="pyt21" value="0">0</input> 
@@ -252,7 +251,7 @@
     <input class="choice" type="radio" name="pyt21" value="3">3</input>
     <input class="choice" type="radio" name="pyt21" value="4">4</input>
     <input class="choice" type="radio" name="pyt21" value="5">5</input>
-    <input type="text" id="PT21" value="" style="width: 15px" maxlength="1" onkeypress="return onlyNumberKey(event)">
+
     <p id="pytanie 1" class='langPL'>Uwielbiam wyzwanie, gdy trzeba rozwiązać trudny problem matematyczny.</p>
     <p class='langEN'>I love the challenge when you have to solve a difficult math problem.</p>
     <input class="choice" type="radio" name="pyt22" value="0">0</input> 
@@ -261,7 +260,7 @@
     <input class="choice" type="radio" name="pyt22" value="3">3</input>
     <input class="choice" type="radio" name="pyt22" value="4">4</input>
     <input class="choice" type="radio" name="pyt22" value="5">5</input>
-    <input type="text" id="PT22" value="" style="width: 15px" maxlength="1" onkeypress="return onlyNumberKey(event)">
+
     <p id="pytanie 1" class='langPL'>Cisza i spokój podczas nauki i rozmyślań są dla mnie ważne.</p>
     <p class='langEN'>Peace and quiet during learning and reflection are important to me.</p>
     <input class="choice" type="radio" name="pyt23" value="0">0</input> 
@@ -270,7 +269,7 @@
     <input class="choice" type="radio" name="pyt23" value="3">3</input>
     <input class="choice" type="radio" name="pyt23" value="4">4</input>
     <input class="choice" type="radio" name="pyt23" value="5">5</input>
-    <input type="text" id="PT23" value="" style="width: 15px" maxlength="1" onkeypress="return onlyNumberKey(event)">
+
     <p id="pytanie 1" class='langPL'>Czytam dla przyjemności codziennie.</p>
     <p class='langEN'>I read for pleasure every day.</p>
     <input class="choice" type="radio" name="pyt24" value="0">0</input> 
@@ -279,7 +278,7 @@
     <input class="choice" type="radio" name="pyt24" value="3">3</input>
     <input class="choice" type="radio" name="pyt24" value="4">4</input>
     <input class="choice" type="radio" name="pyt24" value="5">5</input>
-    <input type="text" id="PT24" value="" style="width: 15px" maxlength="1" onkeypress="return onlyNumberKey(event)">
+
     </div>
     <div class='strona4'>
         <button class="m-button" onclick="strona4t3()">strona 3</button>
@@ -293,7 +292,7 @@
     
     <canvas id="myChart"></canvas>
     <button onclick="back()" class='ehh'>podejdź ponownie do testu</button>
-    <button onclick="save()">zapisz</button>
+    <button onclick="save()" class='ehh'>zapisz</button>
 
 </div>
 

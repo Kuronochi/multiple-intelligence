@@ -30,28 +30,34 @@ div.wynik{
 div.langch {
     width: auto;
    
-    float: left;
-    padding: 20px;
+    float: right;
+    padding: 10px;
+    
+/*
     border: 2px solid red;
-
+*/
 }
 
 div.tytul{
     width: 40%;
     float: left;
     padding: 10px;
+    /*
     border: 2px solid red;
-
+*/
 }
 
 .float-container {
+    /*
     border: 1px solid rgb(230, 247, 2);
+    */
     padding: 20px;
     height: 100px;
 }
 div.strony{
-    
+    /*
     border: 2px solid rgb(49, 67, 170);
+    */
     padding: 20px;
 }
 

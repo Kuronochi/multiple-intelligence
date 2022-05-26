@@ -9,9 +9,6 @@ let rbs = [];
 function odpow(){
   for (i = 0; i <24; i++){
     j = i + 1
- //   odp[i] = +document.getElementById('PT'+j).value; 
-
-
     radios = document.getElementsByName("pyt"+j );
     for (var m = 0; m < radios.length; m++) {
       if (radios[m].checked) {
@@ -82,6 +79,7 @@ function myFunction() {
         }else document.getElementById('demo').innerHTML = '';
     }
     let wynik = [];
+    let wynikt = [];
     // dane do wykresu
     if(opdzwr != true){
       document.getElementById('demo').innerHTML = '';  
@@ -96,9 +94,16 @@ function myFunction() {
     wynik[6] = odp[4] + odp[7] + odp[19];
     wynik[7] = odp[2] + odp[8] + odp[22];
    
-   
+    wynikt[2] = odp[9] + odp[10] + odp[20];
+    wynikt[1] = odp[13] + odp[16] + odp[21];
+    wynikt[0] = odp[1] + odp[12] + odp[23];
+    wynikt[7] = odp[0] + odp[6] + odp[14];
+    wynikt[6] = odp[3] + odp[5] + odp[18];
+    wynikt[5] = odp[11] + odp[15] + odp[17];
+    wynikt[4] = odp[4] + odp[7] + odp[19];
+    wynikt[3] = odp[2] + odp[8] + odp[22];
 
-    y = wynik; 
+    y = wynikt; 
     chart.data.datasets[0].data = y;
     chart.update();
 
@@ -287,7 +292,6 @@ function save(data, filename, type){
   // przejscie z 3 do 2 
   function strona3t2() {
     strona_3 = document.querySelectorAll('.strona3');
-
   for (i = 0; i < strona_3.length; i++) {
     if (strona_3[i].style.display === 'none') {
         strona_3[i].style.display = 'block';
@@ -295,9 +299,7 @@ function save(data, filename, type){
         strona_3[i].style.display = "none";
     }
   }
-  
   strona_2 = document.querySelectorAll('.strona2');
-
   for (i = 0; i < strona_2.length; i++) {
     if (strona_2[i].style.display === 'block') {
         strona_2[i].style.display = 'none';
@@ -364,11 +366,12 @@ function eng() {
   for (i = 0; i < lang_PL.length; i++) {
     if (lang_PL[i].style.display === 'none') {
         lang_PL[i].style.display = 'block';
-        chart.data.labels = ['asddasdas','asdasdasddas','dasdasdasd','sadasddas','Vasdasdasdal','Bodsadasdasdetic','Inasdasdl','Intasdasdasonal'];
+        chart.data.labels = ['Lingwistyczna','Matematyczno-logiczna','Przyrodnicza','Instrapersonalna','Interpersonalna','kinestetyczna','Wizualna','Muzyczna'];
         chart.update();
-    } else {
+        
+    } else { 
         lang_PL[i].style.display = "none";
-        chart.data.labels = ['Naturalistic','Logical-Mathematical','Linguistic-Verbal ','Musical','Visual-Spatial','Bodily-Kinesthetic','Interpersonal','Intrapersonal'];
+        chart.data.labels = ['Linguistic-Verbal','Logical-Mathematical','Naturalistic','Intrapersonal','Interpersonal','Bodily-Kinesthetic','Visual-Spatial','Musical'];
         chart.update();
     }
   }
@@ -411,8 +414,6 @@ function eng() {
 
 
 function onlyNumberKey(evt) {
-          
-    // Only ASCII character in that range allowed
     var ASCIICode = (evt.which) ? evt.which : evt.keyCode
     if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 53))
         return false;
@@ -427,20 +428,29 @@ function onlyNumberKey(evt) {
     let chart = new Chart(myChart, {
         type:'radar',
         data:{
-            labels:['Naturalistic','Logical-Mathematical','Linguistic-Verbal ','Musical','Visual-Spatial','Bodily-Kinesthetic','Interpersonal','Intrapersonal'],
+            labels:['Lingwistyczna','Matematyczno-logiczna','Przyrodnicza','Instrapersonalna','Interpersonalna','kinestetyczna','Wizualna','Muzyczna'],
             datasets:[{
-                label:'label1',
+                label:'Wartość',
                 data:[],
                 
             }]
+            
         },
-        options: {}
+        options: {
+          scale: {
+            r: {
+                suggestedMin: 0,
+                
+                stepSize: 1
+            }
+        }
+        }
     });
  
 
     function addData() {
         myFunction();
-        y = wynik; 
+        y = wynikt; 
 
         chart.data.datasets[0].data = y;
         
